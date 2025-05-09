@@ -93,7 +93,7 @@ python service_registration_firebase.py
 ```
 *Los argumentos opcionales están documentados al inicio de cada script.*
 
-### 8. Explicación Técnica del Funcionamiento
+# 8. Explicación Técnica del Funcionamiento
 
 1. **Preparación (`model_training.py`)**  
    - Recorre cada subcarpeta de **`dataset/`** y, usando una función interna llamada `face_recognition()`, genera un vector de **128 dimensiones** por rostro.  
@@ -130,7 +130,7 @@ flowchart LR
 En tiempo real decide si el rostro pertenece a un usuario conocido o desconocido, registra la asistencia o almacena evidencias, y luego envía reportes semanales sin intervención humana. Esto garantiza un control de acceso rápido, auditado y con trazabilidad tanto local como en la nube.
 
 
-# 10. Buenas Prácticas y Errores Comunes
+# 9. Buenas Prácticas y Errores Comunes
 - Capturar ≥ 6 imágenes por persona, con variaciones de luz y ángulo.  
 - Re-entrenar el modelo tras agregar usuarios.  
 - Verificar permisos de escritura en `exported_unknown_videos/`.  
@@ -140,16 +140,16 @@ En tiempo real decide si el rostro pertenece a un usuario conocido o desconocido
   ```
 - Si la cámara no inicia, asegúrate de que ninguna otra aplicación la esté usando.
 
-# 11. Limitaciones del Proyecto
+# 10. Limitaciones del Proyecto
 - Solo probado en Windows; compilación macOS/Linux no garantizada.  
 - Sensible a cambios bruscos de iluminación.  
 - No soporta múltiples cámaras en paralelo.
 
-# 12. Recomendaciones Futuras
+# 11. Recomendaciones Futuras
 - Modificar el codigo para usarlo en una Raspberry Pi
 - Contenedor Docker multiplataforma.  
 - Dashboard web con métricas en tiempo real.  
 
-# 13. Autores y Contacto
+# 12. Autores y Contacto
 - **Juler Anderson Hermitaño Castro** — jahermit@ulima.edu.pe
 - **Ignacio de Jesús Medina Urrunaga** — imedinau@ulima.edu.pe
