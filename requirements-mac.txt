@@ -1,0 +1,13 @@
+face_recognition
+opencv-python
+numpy<2.2.0
+imutils
+torch==2.5.1
+torchvision==0.20.1
+psycopg2-binary
+pyttsx3
+schedule
+pandas
+apscheduler
+sqlalchemy
+python-dotenv
